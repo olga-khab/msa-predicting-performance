@@ -72,7 +72,7 @@ A couple of notes about this:
     
     An immediate problem with thisapproach is the high class imbalance:
 
-    !!!!!!!!!!!!!!!!!!!!!!!!!!!!IMAGES HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    ![diagram](dist)
 
     Clearly, the more "extreme" cases will be lost and the classifiers may not be able to learn to distinguish between them. We could balance the classes by undersampling to match the least prevalent class but that would leave a realtively small training set.
 
