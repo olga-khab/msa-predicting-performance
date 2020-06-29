@@ -1,9 +1,4 @@
-<!-- #region -->
 # Predicting high school performance with Naive Bayes and Random Forests
-
-## Summary 
-
-## Background
 
 ## Dataset
 The [dataset](https://archive.ics.uci.edu/ml/datasets/student+performance) was taken from the UCI Machine Learning Repository. It contains information about students and their academic performance, collected at two secondary schools in Portugal through student surveys and performance records. 
@@ -88,7 +83,7 @@ We want to keep the problem multi-lable but avoid high imbalance as much as poss
 * 10 to 15.99 - `Sufficient to good`
 * 16 to 20 - `Very good to excellent`
 
-## Setup and functions
+## Setup and miscellaneous
 ### Additional packages
 * Sklearn doesn't yet have support for problems with both continuous and discrete attributes. For mixed-attribute Naive Bayes classifier, we will use the [mixed_naive_bayes library](https://github.com/remykarem/mixed-naive-bayes):
 `pip install mixed-naive-bayes`.
@@ -97,11 +92,10 @@ We want to keep the problem multi-lable but avoid high imbalance as much as poss
 `conda install -c pchrapka scikit-feature`
 CFS was meant to improve the NB classifier by getting rid of correlated attributes. It wasn't particularly useful in the end as the model performed better with chi-squared featuer selection.
 
-
-
+### Hyperparameter tuning
+The Random Forest classifier was improved by tuning the hyperparameters. The tuning is done through a random grid serach across a selected search space. It will take around 6 minutes to run.
 
 ## References
 Portugal Secondary and Higher Education Grading: https://www.portugaleducation.info/education-system/grading-system-academic-year-and-language-of-instruction.html
 
 P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008.
-<!-- #endregion -->
